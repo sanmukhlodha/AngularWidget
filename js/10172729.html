@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/jquery.js"></script>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/social-buttons.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("V0779-d9.jpg");
+            background-size: auto cover;
+        }
+
+        .error {
+            color: red;
+        }
+
+
+        select.error:focus {
+            border-color: red;
+        }
+
+        select.error {
+            border-color: red;
+        }
+
+        input.error:focus {
+            border-color: red;
+        }
+
+        input.error {
+            border-color: red;
+        }
+
+        .space {
+            padding-top: 1%;
+        }
+
+        .panel-heading {
+            background-color: rgba(0,0,0,0);
+            opacity: 0;
+            display: none;
+        }
+
+        .carousel-caption {
+            text-align: left;
+            background: black;
+            width: 100%;
+            opacity: 0.3;
+            padding-left: 0%;
+            padding-top: 0%;
+            padding-bottom: 2%;
+        }
+
+        .carousel-indicators {
+            padding-left: 20%;
+        }
+
+        .panel {
+            background-color: rgba(0,0,0,0);
+        }
+
+        .panel-body {
+            background-color: #fff;
+            padding-top: 0%;
+            padding-left: 0%;
+        }
+
+        carousel-inner {
+            padding-bottom: 0%;
+        }
+
+        .item {
+            background-color: #fff;
+            padding-bottom: 0%;
+        }
+
+            .item .active {
+                background-color: #fff;
+                padding-bottom: 0%;
+            }
+
+        .zillowLicense {
+            color: #fff;
+            text-align: center;
+            background-color: grey;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: orange;
+        }
+
+        .panel-default {
+            border-color: rgba(0,0,0,0);
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+
+        .nav-tabs {
+            padding-left: 1.5% border-bottom : 1px solid rgba(0,0,0,0);
+        }
+
+        .space {
+            background-color: #fff;
+        }
+
+        .panel-body {
+            background-color: rgba(0,0,0,0);
+            padding-bottom: 0%;
+        }
+
+
+        .table-responsive {
+        }
+
+        .nav-tabs li. a {
+            background-color: #fff;
+            color: #428bca;
+        }
+
+        .nav-tabs li a {
+            background-color: orange;
+            color: #fff;
+        }
+
+        .errorNoMatch {
+            background: rgba(0, 0, 0, 0.5);
+            color: red;
+            font: 20px arial red;
+            text-align: center;
+        }
+
+        .leftGap {
+            padding-left: 10%;
+        }
+    </style>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src='http://connect.facebook.net/en_US/all.js'></script>
+    <script src="js/app.js"></script>
+    <title></title>
+</head>
+<body>
+
+    <div class="col-sm-12">
+ <div class="col-sm-12">
+            <h4 style="color: orange">Search Your Property Here</h4>	
+			 </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    
+        <div class="col-sm-12">
+		<div class="col-sm-10">
+            <form role="form" class="form-horizontal" id="formInput" novalidate="novalidate">
+                <div class="form-group">
+                    <label class="control-label col-sm-1" style="color: orange; width: auto">Street Address:</label>
+                    <div class="col-sm-2">
+                        <input class="form-control" name="txtStAddress" id="txtStAddress" placeholder="Address" required></input>
+                    </div>
+                    <label class="control-label col-sm-1" style="color: orange; width: auto">City:</label>
+                    <div class="col-sm-2">
+                        <input class="form-control" name="txtCityName" id="txtCityName" placeholder="City" required></input>
+                    </div>
+
+
+
+
+                    <label class="control-label col-sm-1" style="color: orange; width: auto">State:</label>
+                    <div class="col-sm-2">
+                        <select class="form-control" name="optState" style="" required>
+                            <option value="" selected></option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+                    
+ <div class="col-sm-1">&nbsp</div>
+				
+                    <div class="col-sm-1">
+                        <input type="submit" class="btn btn-warning form-control" style="width: auto" value="Submit" />
+                    </div>
+
+                </div>
+            </form>
+			</div>
+        
+
+        <div class="col-sm-2">
+        
+                    <img  src="http://www.zillow.com/widgets/GetVersionedResource.htm?path=/static/logos/Zillowlogo_150x40_rounded.gif" width="150" height="40" alt="Zillow Real Estate Search" />
+       
+      
+        </div>
+</div>
+ 
+
+    <div class="col-sm-12">
+
+        
+            <hr />
+      
+        
+    </div>
+    <div id="output" style="display: none">
+
+        <!-- Nav tabs -->
+	<div class="col-sm-12">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#basicInfo" data-toggle="tab">Basic Info</a>
+            </li>
+            <li><a href="#historicalZestimates" data-toggle="tab">Historical Zestimates</a>
+            </li>
+
+        </ul>
+		</div>
+
+        <!-- Tab panes -->
+        <div class="tab-content col-sm-12">
+            <div class="tab-pane fade in active" id="basicInfo">
+
+                <div class="space"></div>
+                <div class="space"></div>
+                <!-- /.panel-heading -->
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+
+                        <tbody>
+                            <tr>
+                                <td colspan="3">See more details for <a id="addressLink"></a>on Zillow
+									</td>
+                                <td align="right">
+                                    <button id="fbPost" onclick="shareFB()" class="btn btn-block btn-social btn-facebook">
+                                        <i class="fa fa-facebook"></i>Share on Facebook
+                           
+                                    </button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Property Type:</td>
+                                <td class="text-right" id="useCode"></td>
+                                <td>Last Sold Price:</td>
+                                <td id="lastSoldPrice" class="text-right"></td>
+                            </tr>
+                            <tr>
+
+                                <td>Year Built:</td>
+                                <td class="text-right" id="yearBuilt"></td>
+                                <td>Last Sold Date:</td>
+                                <td class="text-right" id="lastSoldDate"></td>
+                            </tr>
+                            <tr>
+
+                                <td>Lot Size:</td>
+                                <td class="text-right" id="lotSize"></td>
+                                <td>Zestimate&reg; Property Estimate as of <span id="zestimateDate"></span>:</td>
+                                <td class="text-right" id="zestimateAmount"></td>
+                            </tr>
+                            <tr>
+
+                                <td>Finished Area:</td>
+                                <td class="text-right" id="finishedSqFt"></td>
+                                <td>30 Days Overall Change:</td>
+                                <td class="text-right" id="valueChange"></td>
+                            </tr>
+                            <tr>
+                                <td>Bathrooms:</td>
+                                <td class="text-right" id="bathrooms"></td>
+                                <td>All Time Property Range:</td>
+                                <td class="text-right" id="valuationRange"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Bedrooms:</td>
+                                <td class="text-right" id="bedrooms"></td>
+                                <td>Rent Zestimate&reg; Valuation as of <span id="rentzestimateDate"></span>:</td>
+                                <td class="text-right" id="rentzestimateAmount"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Tax Assessment Year:</td>
+                                <td class="text-right" id="taxAssessmentYear"></td>
+                                <td>30 Days Rent Change:</td>
+                                <td class="text-right" id="rvalueChange"></td>
+                            </tr>
+                            <tr>
+                                <td>Tax Assessment:</td>
+                                <td class="text-right" id="taxAssessment"></td>
+                                <td>All Time Rent Change:</td>
+                                <td class="text-right" id="rvaluationRange"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- /.panel-body -->
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="historicalZestimates">
+                <header class="carousel slide" id="myCarousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                        <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+                        <li data-slide-to="2" data-target="#myCarousel" class=""></li>
+                    </ol>
+
+                    <!-- Wrapper for Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <!-- Set the first background image using inline CSS below. -->
+                            <img id="oneYear" class="img-responsive center-block" />
+                            <div class="carousel-caption">
+                                <h5>Historical Zestimates for the past 1 year</h5>
+
+                                <h6 class="propName"></h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- Set the second background image using inline CSS below. -->
+                            <img id="fiveYears" class="img-responsive center-block" />
+
+                            <div class="carousel-caption">
+                                <h5>Historical Zestimates for the past 5 years</h5>
+
+                                <h6 class="propName"></h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- Set the third background image using inline CSS below. -->
+                            <img id="tenYears" class="img-responsive center-block" />
+                            <div class="carousel-caption">
+                                <h5>Historical Zestimates for the past 10 years</h5>
+                                <h6 class="propName"></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a data-slide="prev" href="#myCarousel" class="left carousel-control">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a data-slide="next" href="#myCarousel" class="right carousel-control">
+                        <span class="icon-next"></span>
+                    </a>
+
+                </header>
+            </div>
+
+
+        </div>
+        <!-- /.panel-body -->
+
+        <!-- /.panel -->
+    </div>
+
+
+
+
+
+    <div class="row col-sm-12 " id="nooutput" style="display: none">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-5"><b class="errorNoMatch">No Exact Match Found--Verify that the given address is correct.</b></div>
+        <div class="col-sm-3"></div>
+
+    </div>
+
+        <div class="col-sm-12">
+            <footer class="zillowLicense">
+                <div>
+                    <span>&copyZillow, Inc., 2006-2014. Use is subject to</span><a href="http://www.zillow.com/corp/Terms.htm" target="_blank"> Terms of Use</a>
+                </div>
+                <div>
+                    <a href="http://www.zillow.com/wikipages/What-is-a-Zestimate/" target="_blank">What's a Zestimate?</a>
+                </div>
+            </footer>
+        </div>
+ 
+
+    <noscript>
+</body>
+</html>

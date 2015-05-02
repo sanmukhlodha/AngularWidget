@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/d3.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <style>
+      
+path.arc {
+    cursor: move;
+    fill: #fff;
+}
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.node {
+    font-size: 10px;
+    pointer-events: none;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+    </style>
+    <title></title>
+</head>
+<body ng-app="D3Graphics">
+    <div>
+        <h2>D3 Graphic</h2>
+        <sanphics ng-init="load()" chart="force" filepath ="clusterdata.txt" label="label" val="val" ></sanphics>
+    </div>
+</body>
+</html> 
