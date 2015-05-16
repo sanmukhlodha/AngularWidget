@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="Scripts\clusterdata.json" />
+    <Content Include="clusterdata.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,6 +69,32 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="app.js" />
+    <Content Include="clusterdata.txt" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\social-buttons.css" />
+    <Content Include="inputData.txt" />
+    <Content Include="js\10172729.html" />
+    <Content Include="js\additional-methods.js" />
+    <Content Include="js\additional-methods.min.js" />
+    <Content Include="js\app.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="myPage.html" />
+    <Content Include="Readme.txt" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\d3.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
